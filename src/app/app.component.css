@@ -1,0 +1,64 @@
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for the list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Style for the icons */
+  .icons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  i {
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  i:hover {
+    opacity: 1;
+  }
+  
+  /* Style for the pencil icon */
+  .fa-pencil:before {
+    content: "\f040";
+  }
+  
+  /* Style for the trash icon */
+  .fa-trash:before {
+    content: "\f2ed";
+  }
+  

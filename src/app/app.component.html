@@ -1,0 +1,16 @@
+
+<h1>Simple Todo App Using Angular</h1>
+
+<input [(ngModel)]="todo.title" type="text">
+<button [disabled] ="!todo.title"(click)="onClick()" type="submit">{{todo.id?'Update':'Add'}}</button>
+
+<div >
+  <ul>
+    <li *ngFor="let item of todoList">
+      {{item.title}}
+     <div> <i class="fa-solid fa-pencil" (click)="updateClick(item)"></i>
+      <i class="fa-solid fa-trash"  (click)="deleteTodo(item.id)"></i></div>
+    </li>
+  </ul>
+</div>
+
